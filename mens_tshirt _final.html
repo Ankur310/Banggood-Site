@@ -17,26 +17,26 @@
             gap: 20px;
             width: 100%;
         }
-
+        
         #parent {
             /* border: 1px solid red; */
             height: 400px;
             width: 100%;
             font-family: Arial, Helvetica, sans-serif;
         }
-
+        
         .img_box {
             /* border: 1px solid blue; */
             width: 100%;
             height: 65%;
             background-color: whitesmoke;
         }
-
+        
         .img_box:hover {
             opacity: 0.9;
             background-color: lightgrey;
         }
-
+        
         img {
             width: 75%;
             height: 100%;
@@ -44,12 +44,12 @@
             margin-right: auto;
             margin-left: auto;
         }
-
+        
         .content {
             /* border: 1px solid teal; */
             margin-left: 1px;
         }
-
+        
         .dis_offer {
             /* border: 1px solid cyan; */
             width: 100%;
@@ -60,19 +60,19 @@
             display: flex;
             color: grey;
         }
-
+        
         .price {
             margin-top: 10px;
             color: orangered;
         }
-
+        
         .title {
             font-size: 13px;
             margin-top: -15px;
             color: grey;
             font-weight: lighter;
         }
-
+        
         .deals {
             font-size: 12px;
             margin-top: 5px;
@@ -82,34 +82,34 @@
             font-weight: lighter;
             text-align: center;
         }
-
+        
         .review {
             /* margin-top: -10px; */
             color: grey;
             font-weight: lighter;
         }
-
+        
         .discount {
             text-decoration: line-through;
             font-weight: lighter;
         }
-
+        
         .offer {
             font-weight: lighter;
         }
-
+        
         @media only screen and (min-width:0px) and (max-width: 320px) {
             #container {
                 grid-template-columns: repeat(1, 1fr);
             }
         }
-
+        
         @media only screen and (min-width:321px) and (max-width:720px) {
             #container {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
-
+        
         #container2 {
             width: 100%;
             height: 160px;
@@ -119,50 +119,50 @@
             font-size: 13px;
             font-weight: lighter;
         }
-
+        
         #container2>.bars {
             margin-right: 5px;
             /* border: 1px solid red; */
             display: flex;
         }
-
+        
         .bars>div {
             margin-right: 5px;
             margin-bottom: 5px;
             /* margin-top: 5px; */
             color: grey;
         }
-
+        
         .bars>div:hover {
             cursor: pointer;
             text-decoration: underline;
             color: black;
         }
-
+        
         .price_bar {
             /* border: 1px solid teal; */
             display: flex;
             margin-top: 5px;
         }
-
+        
         .price_bar>div {
             margin-right: 10px;
         }
-
+        
         .min {
             height: 35px;
             width: 55px;
             border-radius: 5px;
             border: 1px solid grey;
         }
-
+        
         .max {
             height: 35px;
             width: 55px;
             border: 1px solid grey;
             border-radius: 5px;
         }
-
+        
         .ship_from {
             padding: 10px;
             /* margin: 10px; */
@@ -173,11 +173,11 @@
             width: 130px;
             color: grey;
         }
-
+        
         .ship_from:hover {
             cursor: pointer;
         }
-
+        
         .price_name {
             /* border: 1px solid teal; */
             height: 20px;
@@ -185,7 +185,7 @@
             padding-top: 10px;
             color: grey;
         }
-
+        
         .vertical_bars {
             /* border: 1px solid red; */
             width: 100px;
@@ -194,26 +194,26 @@
             height: 40px;
             display: flex;
         }
-
+        
         .vertical_bars>div {
             width: 25px;
             height: 100%;
             /* border:1px solid grey; */
             border-right: 1px solid grey;
         }
-
-        .vertical_bars > div:hover {
+        
+        .vertical_bars>div:hover {
             color: orangered;
             cursor: pointer;
         }
-
+        
         .sort {
             /* border: 1px solid red; */
             display: flex;
             margin-top: 10px;
             height: 40px;
         }
-
+        
         .sort_box {
             border: 1px solid grey;
             /* width: 25%; */
@@ -221,35 +221,35 @@
             margin-left: 10px;
             border-radius: 5px;
         }
-
+        
         .sort_box>div {
             margin-top: 10px;
             margin-left: 10px;
             /* border: 1px solid grey; */
             height: 20px;
         }
-
+        
         .sort_box>div:hover {
             color: orangered;
             cursor: pointer;
         }
-
+        
         #price_tag {
             padding: 3px;
             border: none;
             margin-left: -5px;
             margin-top: -3px;
         }
-
+        
         #price_tag:hover {
             color: orangered;
         }
-
+        
         .sort_heading {
             color: grey;
             margin-top: 10px;
         }
-
+        
         .checkbox {
             transform: scale(1.5);
             border: 1px solid grey;
@@ -257,20 +257,22 @@
             margin-right: 10px;
             margin-top: 12px;
         }
-
+        
         .checkbox_content {
             color: grey;
         }
-
+        
         .checkbox:hover {
             cursor: pointer;
         }
-        #maincontainer{
+        
+        #maincontainer {
             /* border: 1px solid red; */
             width: 80%;
             /* margin-left: 300px; */
         }
-        #leftcontainer{
+        
+        #leftcontainer {
             /* border: 1px solid teal; */
             width: 20%;
             height: 100%;
@@ -279,67 +281,75 @@
             /* margin-top: 20px; */
             cursor: pointer;
         }
-
-        #wholecontainer{
+        
+        #wholecontainer {
             /* border: 1px solid blue; */
             display: flex;
             margin-top: 20px;
         }
-
-        .Related_categories{
+        
+        .Related_categories {
             /* border: 1px solid red; */
             margin-top: -7px;
         }
-        .Related_categories > h5:hover{
+        
+        .Related_categories>h5:hover {
             color: orangered;
             cursor: pointer;
             text-decoration: underline;
         }
-        .Related_categories > h5{
+        
+        .Related_categories>h5 {
             margin-left: 10px;
             line-height: 5px;
             font-family: sans-serif;
             margin-top: 15px;
         }
-        .Related_categories > .types{
+        
+        .Related_categories>.types {
             margin-left: 30px;
             color: grey;
             font-family: sans-serif;
             line-height: 1px;
             font-weight: lighter;
-
         }
-        .types > h5{
+        
+        .types>h5 {
             margin-top: 25px;
         }
-        .types > h5:hover{
+        
+        .types>h5:hover {
             color: orangered;
             cursor: pointer;
             text-decoration: underline;
         }
-        .brands > div{
+        
+        .brands>div {
             /* border: 1px solid orange; */
             /* width: 100%; */
             display: flex;
             margin-top: 15px;
         }
-        .brands > div> h5{
+        
+        .brands>div>h5 {
             margin-left: 5px;
             font-family: sans-serif;
         }
-        .brands > div > h5:hover{
+        
+        .brands>div>h5:hover {
             color: orangered;
             cursor: pointer;
         }
-        .brands > div > div > img{
+        
+        .brands>div>div>img {
             /* border: 1px solid black; */
             margin-left: 5px;
             border-radius: 5px;
             border: 1px solid grey;
             /* margin-top: -8px; */
         }
-
-        .logo2{
+        
+        .logo2 {
             width: 30%;
             border: 1px solid grey;
             margin-top: 5px;
@@ -347,13 +357,15 @@
             margin-left: 5px;
             border-radius: 5px;
         }
-        .seasons{
+        
+        .seasons {
             /* border: 1px solid yellow; */
             margin-top: 15px;
             width: 100%;
             /* margin-bottom: 10px; */
         }
-        .seasons > div{
+        
+        .seasons>div {
             line-height: 20px;
             margin-top: 10px;
             margin-left: 5px;
@@ -362,64 +374,63 @@
             font-size: 13px;
             font-weight: lighter;
         }
-
-        .seasons > h5{
+        
+        .seasons>h5 {
             /* border: 1px solid red; */
             font-family: sans-serif;
             margin-bottom: 5px;
             margin-left: 2px;
         }
-        .seasons > h5:hover{
+        
+        .seasons>h5:hover {
             color: orangered;
         }
+        
         .fit {
             width: 100%;
             font-family: sans-serif;
-            margin-left: 5px ;
+            margin-left: 5px;
         }
-        .fit > div{
+        
+        .fit>div {
             margin-top: 10px;
         }
-
-
-
-
         /* footer */
-
-
-
+        
         #footer {
             background-color: #f0f0f0;
             padding: 2%;
             display: flex;
             justify-content: space-between;
         }
-        #footer > div {
+        
+        #footer>div {
             width: 23%;
         }
-
-
+        
         #footer h4,
         #footer p {
             margin: 5% 0;
         }
-
-        #footer p:hover{
+        
+        #footer p:hover {
             text-decoration: underline;
         }
+        
         #footer p {
             font-size: 0.9rem;
             color: grey;
         }
+        
         #footer h4 {
             color: #283747;
             font-weight: 400;
         }
-
-        .f-1 > div:nth-child(2) {
+        
+        .f-1>div:nth-child(2) {
             margin-top: 3rem;
         }
-
+        
         .f-1 input {
             width: 92%;
             padding: 6px 0;
@@ -428,60 +439,61 @@
             border-bottom: 2px solid black;
             outline: none;
         }
-
+        
         .f-1 input:focus {
             border-bottom: 2px solid #ff6e26;
         }
-
-        .f-2 > div:nth-child(2) {
+        
+        .f-2>div:nth-child(2) {
             margin-top: 1.5rem;
         }
-
+        
         .f-3 {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
-
-        .f-3 > div:nth-child(1) > div {
+        
+        .f-3>div:nth-child(1)>div {
             display: flex;
             align-items: center;
         }
-
-        .f-3 > div:nth-child(1) > div > span:nth-child(1) {
+        
+        .f-3>div:nth-child(1)>div>span:nth-child(1) {
             border: 2px solid black;
             border-radius: 50%;
             padding: 2% 4%;
             margin: 0 3% 0 0;
         }
-
-        .f-3 > div:nth-child(1) > div > span:nth-child(2) {
+        
+        .f-3>div:nth-child(1)>div>span:nth-child(2) {
             border: 2px solid black;
             border-radius: 50%;
             padding: 2% 3%;
             margin: 0 3% 0 3%;
         }
-
-        .f-3 > div:nth-child(1) > div > p {
+        
+        .f-3>div:nth-child(1)>div>p {
             border: 2px solid black;
             padding: 6px 16px;
             text-align: center;
             border-radius: 20px;
         }
-
-        .f-3 > div:nth-child(3) > span {
+        
+        .f-3>div:nth-child(3)>span {
             font-size: 0.9rem;
             color: grey;
         }
-
+        
         .payment {
             width: 90%;
         }
-        .payment > img {
+        
+        .payment>img {
             width: 100%;
             margin: 0 3%;
         }
-        </style>
+    </style>
 
     <!-- </style> -->
 
@@ -491,157 +503,144 @@
 
     <!-- nav bar -->
 
-    <script
-            src="https://kit.fontawesome.com/5194c7794a.js"
-            crossorigin="anonymous"
-        ></script>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="icon"
-            href="https://www.banggood.in/favicon.ico"
-            type="image/x-icon"
-        />
-        <title>Banggood</title>
-        <!-- <link rel="stylesheet" href="home.css" /> -->
+    <script src="https://kit.fontawesome.com/5194c7794a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="https://www.banggood.in/favicon.ico" type="image/x-icon" />
+    <title>Banggood</title>
+    <!-- <link rel="stylesheet" href="home.css" /> -->
 
 
 
 
     <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Open sans', Arial, Helvetica, sans-serif;
-            }
-
-            /* utility classes */
-
-            .hvr:hover {
-                color: #ff6e26;
-            }
-
-            /* Navbar */
-
-            #nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                height: 75px;
-                background-color: #2d2d38;
-                color: white;
-                padding: 0 4.5%;
-            }
-
-            #logo {
-                flex: 1;
-                cursor: pointer;
-            }
-
-            #logo > img {
-                 width: 75%;
-            }
-
-            .search {
-                flex: 3;
-                display: flex;
-            }
-            .search > input {
-                width: 90%;
-                padding: 9px;
-                border: none;
-                outline: none;
-                border-top-left-radius: 5px;
-                border-bottom-left-radius: 5px;
-            }
-            .search > div {
-                background-color: #ff6e26;
-                width: 8%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-top-right-radius: 5px;
-                border-bottom-right-radius: 5px;
-                cursor: pointer;
-            }
-
-            .search > div:hover {
-                 background-color: #cf6e26;
-            }
-
-            #nav > :nth-child(3) {
-                display: flex;
-                flex: 2;
-                justify-content: space-around;
-            }
-
-            .ship > span {
-                color: grey;
-                font-size: 0.9rem;
-            }
-
-            .ship > p {
-                font-size: 0.8rem;
-                cursor: pointer;
-            }
-
-            .ship > p > span {
-                display: inline-block;
-                padding: 0 0 0 0.3rem;
-                color: grey;
-            }
-
-            .user {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                cursor: pointer;
-            }
-
-            .user > span {
-                margin: 0.4rem;
-            }
-
-            .user > div {
-                margin-bottom: 0.2rem;
-            }
-
-            .user > div > span {
-                font-size: 0.8rem;
-                color: grey;
-            }
-
-            .user > div > p {
-                font-size: 0.9rem;
-                margin: 0;
-            }
-
-
-            .cart {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-            }
-            .cart:hover {
-                color: #ff6e26;
-            }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open sans', Arial, Helvetica, sans-serif;
+        }
+        /* utility classes */
+        
+        .hvr:hover {
+            color: #ff6e26;
+        }
+        /* Navbar */
+        
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 75px;
+            background-color: #2d2d38;
+            color: white;
+            padding: 0 4.5%;
+        }
+        
+        #logo {
+            flex: 1;
+            cursor: pointer;
+        }
+        
+        #logo>img {
+            width: 75%;
+        }
+        
+        .search {
+            flex: 3;
+            display: flex;
+        }
+        
+        .search>input {
+            width: 90%;
+            padding: 9px;
+            border: none;
+            outline: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        
+        .search>div {
+            background-color: #ff6e26;
+            width: 8%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .search>div:hover {
+            background-color: #cf6e26;
+        }
+        
+        #nav> :nth-child(3) {
+            display: flex;
+            flex: 2;
+            justify-content: space-around;
+        }
+        
+        .ship>span {
+            color: grey;
+            font-size: 0.9rem;
+        }
+        
+        .ship>p {
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+        
+        .ship>p>span {
+            display: inline-block;
+            padding: 0 0 0 0.3rem;
+            color: grey;
+        }
+        
+        .user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .user>span {
+            margin: 0.4rem;
+        }
+        
+        .user>div {
+            margin-bottom: 0.2rem;
+        }
+        
+        .user>div>span {
+            font-size: 0.8rem;
+            color: grey;
+        }
+        
+        .user>div>p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .cart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .cart:hover {
+            color: #ff6e26;
+        }
     </style>
 
 
 </head>
-    <!-- nav bar -->
+<!-- nav bar -->
+
 <body>
     <div id="nav">
-        <div id="logo">
-            <img
-                src="https://css.banggood.in/web/src/img/header-new-logo@2x.png?v=ef2889d"
-                alt="banggood logo"
-                title="banggood"
-            />
+        <div id="logo" onclick="location.href='home.html'">
+            <img src="https://css.banggood.in/web/src/img/header-new-logo@2x.png?v=ef2889d" alt="banggood logo" title="banggood" />
         </div>
         <div class="search">
             <input type="text" placeholder="search products..." />
@@ -655,13 +654,13 @@
                 </p>
             </div>
             <div class="user">
-                <span class="hvr"><i class="far fa-user fa-2x"></i></span>
+                <span class="hvr" onclick="location.href='login.html'"><i class="far fa-user fa-2x"></i></span>
                 <div>
                     <span>Hello</span>
-                    <p class="hvr"><strong>Sign in</strong></p>
+                    <p class="hvr" onclick="location.href='login.html'"><strong class="showUsr">Sign in</strong></p>
                 </div>
             </div>
-            <div class="cart hvr">
+            <div class="cart hvr" onclick="location.href='cart.html'">
                 <i class="fas fa-shopping-cart fa-2x"></i>
             </div>
         </div>
@@ -686,7 +685,9 @@
                 </div>
             </div>
             <div class="brands">
-                <div><h5>Brands</h5></div>
+                <div>
+                    <h5>Brands</h5>
+                </div>
                 <div style="width: 250px;">
                     <div>
                         <img src="https://imgaz.staticbg.com/brands/20190718210639_730.jpg.webp" alt="">
@@ -700,37 +701,42 @@
                     <img src="https://imgaz.staticbg.com/brands/20190623211827_727.jpg.webp" alt="">
                 </div>
             </div>
-            <div class="seasons"><h5>Season</h5>
-                <div><input type="checkbox" >Summer (768)</div>
+            <div class="seasons">
+                <h5>Season</h5>
+                <div><input type="checkbox">Summer (768)</div>
                 <div><input type="checkbox">Spring (405)</div>
                 <div><input type="checkbox">autumn (135)</div>
                 <div><input type="checkbox">Winter (22)</div>
             </div>
 
-            <div class="seasons"><h5>Materials</h5>
-                <div><input type="checkbox" >Cotton (687)</div>
+            <div class="seasons">
+                <h5>Materials</h5>
+                <div><input type="checkbox">Cotton (687)</div>
                 <div><input type="checkbox">Polyester (206)</div>
                 <div><input type="checkbox">Flax (12)</div>
                 <div><input type="checkbox">Cotton & Linen (10)</div>
                 <div><input type="checkbox">Rayon (10)</div>
             </div>
 
-            <div class="seasons"><h5>Sleeve</h5>
-                <div><input type="checkbox" >Short Sleeve (761)</div>
+            <div class="seasons">
+                <h5>Sleeve</h5>
+                <div><input type="checkbox">Short Sleeve (761)</div>
                 <div><input type="checkbox">Long Sleeve (52)</div>
                 <div><input type="checkbox">Half Sleeve (2)</div>
             </div>
 
-            <div class="seasons"><h5>Scene</h5>
-                <div><input type="checkbox" >Casual (808)</div>
+            <div class="seasons">
+                <h5>Scene</h5>
+                <div><input type="checkbox">Casual (808)</div>
                 <div><input type="checkbox">Polyester (206)</div>
                 <div><input type="checkbox">Home (556)</div>
                 <div><input type="checkbox">Sport (45)</div>
                 <div><input type="checkbox">Outdoor (19)</div>
             </div>
 
-            <div class="seasons"><h5>Size</h5>
-                <div><input type="checkbox" >L (809)</div>
+            <div class="seasons">
+                <h5>Size</h5>
+                <div><input type="checkbox">L (809)</div>
                 <div><input type="checkbox">M (795)</div>
                 <div><input type="checkbox">XL (759)</div>
                 <div><input type="checkbox">S (713)</div>
@@ -738,11 +744,21 @@
             </div>
 
             <div class="fit">
-                <div><h5>Fit Type</h5></div>
-                <div><h5>Style</h5></div>
-                <div><h5>Neckline</h5></div>
-                <div><h5>Pattern Type</h5></div>
-                <div><h5>Thickness</h5></div>
+                <div>
+                    <h5>Fit Type</h5>
+                </div>
+                <div>
+                    <h5>Style</h5>
+                </div>
+                <div>
+                    <h5>Neckline</h5>
+                </div>
+                <div>
+                    <h5>Pattern Type</h5>
+                </div>
+                <div>
+                    <h5>Thickness</h5>
+                </div>
             </div>
 
 
@@ -821,8 +837,7 @@
             <div>
                 <h4>Subscribe</h4>
                 <p>
-                    By subscribing you agree to receive email from us. Please read our
-                    Privacy Policy
+                    By subscribing you agree to receive email from us. Please read our Privacy Policy
                 </p>
                 <input type="text" placeholder="Email Address" />
             </div>
@@ -852,8 +867,7 @@
                     <span><i class="fab fa-apple"></i></span>
                     <span><i class="fab fa-android"></i></span>
                     <p>
-                        <span><i class="fas fa-qrcode"></i></span>
-                        QR Code
+                        <span><i class="fas fa-qrcode"></i></span> QR Code
                         <span><i class="fas fa-sort-down"></i></span>
                     </p>
                 </div>
@@ -881,7 +895,8 @@
 </body>
 
 
-    <!-- mens page -->
+<!-- mens page -->
+
 </html>
 <script src="mens_data_tshirts_pants.js"></script>
 
@@ -941,7 +956,7 @@
 
                 addToCart(item)
 
-                // window.location.href = "pro.html"
+
             })
 
             img_box.append(image)
@@ -970,24 +985,37 @@
             })
             displayDatA(sortLIST);
         } else {
-            location.href = "mens_tshirt.html";
+            // window.location.href.reload();
+            window.location.reload();
         }
 
 
     }
 
-    //     var cartArr = []
+    var cartArr = []
 
-    //     function addToCart(item) {
+    function addToCart(item) {
 
-    //         // console.log(item,"item")
+        // console.log(item,"item")
 
-    //         cartArr.push(item)
+        cartArr.push(item)
 
-    //         localStorage.setItem("cartItems", JSON.stringify(cartArr))
+        localStorage.setItem("mensCartItem", JSON.stringify(cartArr))
 
-    // //         alert(" Cart Added Successfully")
+        // alert(" Cart Added Successfully")
 
-    //         window.location.href = "addCart.html"
-    // }
+        window.location.href = "menCheckout.html"
+    }
+
+    // //////////////ADDING SCRIPT TO SHOW THE USERNAME IN THE NAVIGATION BAR
+    var USERNAME = JSON.parse(localStorage.getItem("USERNAME"));
+    console.log(USERNAME);
+    if (USERNAME !== null) {
+        document.querySelector(".showUsr").textContent = USERNAME;
+    }
+
+    // window.onbeforeunload = function() {
+    //     localStorage.removeItem("USERNAME");
+    //     return null;
+    // };
 </script>
