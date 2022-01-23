@@ -3,3 +3,26 @@ This is a clone of a chinese E-commerce website called bangood. It includes user
 to checkout, add the paymnet details and place a order. Users also can regsiter and Signin. There is also sort by functionlity included in Men's and Women's page, where users 
 can sort hign to low and low to high.
 
+### Landing page
+
+![](/website-pictures/landing-page.png)
+
+### Men's Clothing page
+
+![](/website-pictures/mens-page.png)
+
+### Women's Clothing page
+
+![](/website-pictures/womens-page.png)
+
+### Cart page
+
+![](/website-pictures/cart-page.png)
+
+### Sign In/ Register page
+
+![](/website-pictures/register-page.png)
+
+### Payment page
+
+![](/website-pictures/payment-page.png)
