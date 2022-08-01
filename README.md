@@ -10,6 +10,8 @@ https://medium.com/@rkvirajgupta/cloning-of-a-chinese-website-banggood-783ab9c23
 ### Netlify Link
 
 https://bangood-clone.netlify.app
+
+
 ---
 
 ### Team Members
