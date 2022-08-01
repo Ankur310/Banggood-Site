@@ -3,6 +3,14 @@ This is a clone of a chinese E-commerce website called bangood. It includes user
 to checkout, add the paymnet details and place a order. Users also can regsiter and Signin. There is also sort by functionlity included in Men's and Women's page, where users 
 can sort hign to low and low to high.
 
+---
+### Medium Link
+https://medium.com/@rkvirajgupta/cloning-of-a-chinese-website-banggood-783ab9c23d74
+
+### Netlify Link
+
+https://bangood-clone.netlify.app
+---
 
 ### Team Members
 
@@ -52,9 +60,6 @@ can sort hign to low and low to high.
 
 ### Medium Link
 https://medium.com/@rkvirajgupta/cloning-of-a-chinese-website-banggood-783ab9c23d74
-
-
-
 
 ### Netlify Link
 
