@@ -31,7 +31,9 @@
                 <span class="hvr" onclick="location.href='login.html'"><i class="far fa-user fa-2x"></i></span>
                 <div>
                     <span>Hello</span>
-                    <p class="hvr" onclick="location.href='login.html'"><strong class="showUsr">Sign in</strong></p>
+                    <p class="hvr" onclick="location.href='login.html'"><strong class="showUsr">Sign in</strong>
+                     <p class="logouter"></p>
+                    </p>
                 </div>
             </div>
             <div class="cart hvr" onclick="location.href='cart.html'">
@@ -432,9 +434,19 @@
     if (USERNAME !== null) {
         document.querySelector(".showUsr").textContent = USERNAME;
     }
-
-    // window.onbeforeunload = function() {
-    //     localStorage.removeItem("USERNAME");
-    //     return null;
-    // };
+     
+    if (USERNAME !== null) {
+        document.querySelector(".logouter").textContent = "logout";
+        document.querySelector(".logouter").addEventListener("click",zem)           
+        }
+        
+    function zem(){
+        console.log('clicked')
+        localStorage.removeItem("USERNAME");
+        localStorage.removeItem("addresser");
+        localStorage.removeItem("cartData")
+        window.location.href='home.html'
+    }
+    
+    
 </script>

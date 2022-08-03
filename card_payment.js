@@ -14,8 +14,8 @@ function pay() {
         alert("Payment Done!");
         window.location.href = "home.html"
 
-        cartData = [];
-        localStorage.setItem(JSON.stringify(cartData));
+        
+        localStorage.removeItem("cartData");
 
     }
 

@@ -1,6 +1,6 @@
 /////connecting for the different section of page and cheching if the  cart items are empty are not
 //////////////
-var cartData = JSON.parse(localStorage.getItem("cartData"));
+var cartData = JSON.parse(localStorage.getItem("cartData"))||[];
 
 if (cartData.length !== 0) {
     document.querySelector('.cart-container-empty').style.display = "none";
@@ -124,15 +124,27 @@ function Displaydata(cartData) {
     proceedToCheckOut.addEventListener("click", function() {
         // window.location.href = "card_payment.html"
 
+      
+        
+        var addeer = localStorage.getItem("addresser");
+        var sing = localStorage.getItem("USERNAME");
+         if(cartData.length==0){
+            alert("please add products in bag")
+         }
+         else if (sing == null ) {
+            alert("login first")
+            window.location.href = "login.html";
 
+        } 
+       
+            else if (addeer == null ) {
+            window.location.href = "address.html";
 
-        var sing = localStorage.getItem("flag");
-        if (sing == "true") {
-            window.location.href = "card_payment.html";
-        } else {
             // window.history.go(-2);
             // var previousSite = localStorage.setItem("pre", )
-            location.href = "login.html";
+        }
+        else{
+            window.location.href = "card_payment.html";
         }
 
 

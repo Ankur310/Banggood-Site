@@ -10,18 +10,13 @@ function payOrder(e) {
     let state = document.querySelector(".state").value;
     let city = document.querySelector(".city").value;
     let postcode = document.querySelector(".postcode").value;
-
+    
+    
 
     if (fname == "" || lname == "" || tele == "" || address2 == "" || address1 == "" || country == "" || state == "" || city == "" || postcode == "") {
         alert("Please Provide Sufficient Address!")
     } else {
-        // let flag = localStorage.getItem("flag");
-        // console.log(flag);
-        // if (flag == "true") {
-        //     location.href = "card_payment.html";
-        // } else {
-        //     location.href = "login.html"
-        // }
+        localStorage.setItem("addresser", JSON.stringify(fname));
         location.href = "card_payment.html"
     }
 
@@ -35,3 +30,10 @@ var prive = productPRICE[0].price.toLocaleString("en-IN");
 
 document.querySelector(".orderPay-Price").textContent = prive;
 document.querySelector(".orderPay-Price-afterDis").textContent = prive;
+
+var re = JSON.parse(localStorage.getItem("USERNAME"));
+    console.log(re);
+    if (re !== null) {
+        document.querySelector(".zerb").textContent = re;
+        // document.querySelector("#Register").textContent = "";
+    }

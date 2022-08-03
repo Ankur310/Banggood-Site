@@ -61,9 +61,9 @@
             </select>
 
             </p>
-            <p>Card Number: <input type="number" name="card_number" id="card_number" required placeholder="123 456 789 101"></p>
+            <p>Card Number: <input type="number" minlength="16" maxlength="16" name="card_number" id="card_number" required placeholder="123 456 789 101"></p>
             <p>Expiration Date: <input type="date" name="exp_date" id="exp_date" required dd-mm-yyyy></p>
-            <p>CVV <input type="password" name="cvv" id="cvv" required placeholder="123"></p>
+            <p>CVV <input type="password" minlength="3" maxlength="3" limit="3" name="cvv" id="cvv" required placeholder="123"></p>
             <input type="button" value="Pay Now" onclick="pay()">
 
 

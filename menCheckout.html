@@ -108,7 +108,7 @@
                 <span class="hvr" onclick="location.href='login.html'"><i class="far fa-user fa-2x" ></i></span>
                 <div>
                     <span>Hello</span>
-                    <p class="hvr" onclick="location.href='login.html'"><strong>Sign in</strong></p>
+                    <p class="hvr" onclick="location.href='login.html'"><strong class="rewq">Sign in</strong></p>
                 </div>
             </div>
             <div class="cart hvr">
@@ -264,14 +264,18 @@
         //  WomensCheckout.push(item);
         // console.log(womensArray)
         localStorage.setItem("WomensCheckoutItems", JSON.stringify(mensCheckout));
+        var addeer = localStorage.getItem("addresser");
 
-        var sing = localStorage.getItem("flag");
-        if (sing == "true") {
-            window.location.href = "address.html";
-        } else {
-            // window.history.go(-2);
-            // var previousSite = localStorage.setItem("pre", )
+        var singer = localStorage.getItem("USERNAME");
+        if (singer == null ) {
+            alert("login first")
             location.href = "login.html";
+            
+        } else if (addeer == null ) {
+            window.location.href = "address.html";
+
+        }else{
+            window.location.href = "card_payment.html";
         }
     }
 
@@ -308,5 +312,19 @@
     var image6 = document.createElement("img")
     image6.setAttribute("src", "men6.png")
     div6.append(image6)
-    document.querySelector("#bigbox").append(div1, div2, div6)
+   
+   
+   
+   
+   
+   document.querySelector("#bigbox").append(div1, div2, div6)
+
+   var re = JSON.parse(localStorage.getItem("USERNAME"));
+    console.log(re);
+    if (re !== null) {
+        document.querySelector(".rewq").textContent = re;
+        // document.querySelector("#Register").textContent = "";
+    }
+
+
 </script>

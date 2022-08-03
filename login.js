@@ -58,26 +58,24 @@ document.querySelector(".signIn").addEventListener('click', function(e) {
     e.preventDefault();
     var email = document.querySelector('#emailID-1').value;
     var password = document.querySelector('#password-1').value;
-
+    let counter = 0,random=false;
     for (let i = 0; i < userData.length; i++) {
+        counter++;
         if (userData[i].emailIdCreated == email && userData[i].passIdCreated == password) {
-
+               random=true; 
             // adding another variable to show if the user name inplace of the "signin" in nav bar
             localStorage.setItem("USERNAME", JSON.stringify(email));
-            window.history.go(-1);
+            // window.history.go(-1);
 
             flag = 'true';
             localStorage.setItem("flag", JSON.stringify(flag));
-            location.href = "address.html";
+            location.href = "home.html";
             break;
-        } else {
-            // console.log("yes rendering!!");
-            document.querySelector(".wrongEM").querySelector.textContent = "";
-
-
-            document.querySelector(".wrongEM").textContent = "Request parameter Error"
-                // document.querySelector('.wrongEM').append(div);
         }
+         
+    }
+    if(counter==userData.length&&random==false){
+        alert("please register first")
     }
 })
 

@@ -28,9 +28,9 @@
             </div>
 
             <div class="hr"></div>
-            <input type="email" placeholder="Email" id="emailID-1">
+            <input minlength="3"  required type="email" placeholder="Email" id="emailID-1">
             <div class="wrongEM"></div>
-            <input type="password" placeholder="Password" id="password-1">
+            <input minlength="5"  required type="password" placeholder="Password" id="password-1">
             <button class="signIn">Sign in</button>
             <a href="" class="password-forget">Forget your password?</a>
 
@@ -53,12 +53,12 @@
             </div>
 
             <div class="hr2"></div>
-            <input type="email" placeholder="Email" id="emailID-2">
-            <input type="password" placeholder="Password" id="password-2">
+            <input required type="email" placeholder="Email" id="emailID-2">
+            <input required type="password" placeholder="Password" id="password-2">
 
 
 
-            <div class="termsCon"><input type="checkbox" id="accept" value="" onclick="acceptTerms()">I agree to Bangood.com <span>Terms of Use</span> and <span>Privacy Policy</span></div>
+            <div class="termsCon"><input required type="checkbox" id="accept" value="" onclick="acceptTerms()">I agree to Bangood.com <span>Terms of Use</span> and <span>Privacy Policy</span></div>
 
             <button class="createAcc">Create Your Account</button>
             <!-- <a href="" class="password-forget">Forget your password?</a> -->

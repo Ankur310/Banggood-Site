@@ -15,7 +15,8 @@
 
     <div class="navigation">
         <div class="items-pr-re">
-            <img src="icons8-user-24.png"> <a href="..\LogIn/login.html" id="hellSign">Hello,User </a><a href="..\LogIn/login.html" id="Register"> RegisterED</a>
+            <img src="icons8-user-24.png"> <a href="..\LogIn/login.html" id="hellSign">Hello,User </a>
+            <a href="..\LogIn/login.html" class="zerb" id="Register"> RegisterED</a>
         </div>
         <select name="" id="select">
             <option value="">Help</option>
@@ -58,45 +59,45 @@
                 <h4 class="name">Telephone</h4>
             </div>
 
-            <div class="input-name"> <input type="text" placeholder="First name" class="first_name">
-                <input type="text" placeholder="Last name" class="last_name">
-                <input type="number" placeholder="Your Telephone" class="telephone">
+            <div class="input-name"> <input minlength="3"  required type="text" placeholder="First name" class="first_name">
+                <input minlength="3" required type="text" placeholder="Last name" class="last_name">
+                <input minlength="10" maxlength="10" required type="number" placeholder="Your Telephone" class="telephone">
             </div>
             <div class="heading-input">
-                <h4 class="name">Address Line1:</h4>
-                <h4 class="name">Address Line2:</h4>
+                <h4 minlength="3" class="name">Address Line1:</h4>
+                <h4  minlength="3" class="name">Address Line2:</h4>
             </div>
 
             <div class="ADDR1">
-                <input type="text" placeholder="Street and number,Company name, C/O" class="adrr1">
-                <input type="text" placeholder="Apartment/Suite/unit/Building/floor evc." class="adrr2">
-
-            </div>
-
-            <div class="heading-input">
-                <h4 class="name">Country/Region:</h4>
-                <h4 class="name">State/Provinve/Region:</h4>
-            </div>
-
-            <div class="ADDR1">
-                <input type="text" placeholder="India" class="country">
-                <input type="text" placeholder="Please Enter a State.Province/Region" class="state">
+                <input minlength="3" required type="text" placeholder="Street and number,Company name, C/O" class="adrr1">
+                <input minlength="3" required type="text" placeholder="Apartment/Suite/unit/Building/floor evc." class="adrr2">
 
             </div>
 
             <div class="heading-input">
-                <h4 class="name">City</h4>
-                <h4 class="name">ZIP/Post Code</h4>
+                <h4 minlength="3" class="name">Country/Region:</h4>
+                <h4 minlength="3" class="name">State/Provinve/Region:</h4>
             </div>
 
             <div class="ADDR1">
-                <input type="text" placeholder="City" class="city">
-                <input type="text" placeholder="Your Post Code" class="postcode">
+                <input minlength="3" required type="text" placeholder="India" class="country">
+                <input minlength="3" required type="text" placeholder="Please Enter a State.Province/Region" class="state">
+
+            </div>
+
+            <div class="heading-input">
+                <h4  class="name">City</h4>
+                <h4  class="name">ZIP/Post Code</h4>
+            </div>
+
+            <div class="ADDR1">
+                <input minlength="3" required type="text" placeholder="City" class="city">
+                <input maxlength="6" type='number' required  placeholder="Your Post Code" class="postcode">
 
             </div>
 
             <div class='default-set'>
-                <input type="checkbox" style="margin-top: 3px;">
+                <input required type="checkbox" style="margin-top: 3px;">
                 <h3 class="SelectAll">Select as default shipping address</h3>
 
                 <div class="save-cancel">
@@ -117,7 +118,7 @@
             <h2 class="discount">Discounts</h2>
             <h4 class="coupons">Coupons(0 available)</h4>
             <div class="apply">
-                <input type="text" placeholder="Enter Coupon code">
+                <input minlength="3"  type="text" placeholder="Enter Coupon code">
                 <h4>Apply</h4>
 
             </div>

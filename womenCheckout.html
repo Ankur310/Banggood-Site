@@ -257,6 +257,10 @@
 
 
     });
+    var cartData = JSON.parse(localStorage.getItem("cartData"));
+
+  
+   
 
 
     function buyNow(womensCheckout) {
@@ -264,15 +268,21 @@
         // console.log(womensArray)
 
         localStorage.setItem("WomensCheckoutItems", JSON.stringify(womensCheckout));
+        var addeer = localStorage.getItem("addresser");
 
-        let USERNAME = JSON.parse(localStorage.getItem("USERNAME"));
         // console.log(USERNAME)
-        if (USERNAME !== null) {
-            location.href = "address.html";
-        } else {
+        if (USERNAME == null ) {
+            alert("login first")
             location.href = "login.html";
-        }
+        } else if (addeer == null ) {
+            window.location.href = "address.html";
 
+            // window.history.go(-2);
+            // var previousSite = localStorage.setItem("pre", )
+        }
+        else{
+            window.location.href = "card_payment.html";
+        }
         // var sing = localStorage.getItem("flag");
         // if (sing == "true") {
         //     location.href = "address.html"
