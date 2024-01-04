@@ -180,7 +180,7 @@ function Displaydata(cartData) {
 
         var colorOfName = document.createElement("h4");
         colorOfName.className = "colorOfName";
-        colorOfName.textContent = `Color: ${ele.color}`;
+        colorOfName.textContent = `Review: ${ele.review}`;
 
         var PriceOfitem = document.createElement("h4");
         PriceOfitem.className = "PriceOfitem";
